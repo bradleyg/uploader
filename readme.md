@@ -11,8 +11,9 @@ Currently there is no authorisation model, users can create their own 'secret' u
 ## Features:
 * Drag + Drop uploads
 * Upload progress
+* Simultaneous uploads
 * Amazon S3 as the storage platform
-* 'Secret' urls
+* 'Secret' urls  
 
 ## Setup:
 * `npm install uploader`  

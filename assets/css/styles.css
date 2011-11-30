@@ -1,21 +1,21 @@
 body {
   background: url('../img/main.jpg');
-	color: #fff;
+  color: #fff;
   font-size: 11px;
   line-height: 15px;
   font-family: helvetica, arial, sans-serif;
 }
 
 a, a:visited {
-	text-decoration: none;
-	color: #54a6de;
+  text-decoration: none;
+  color: #54a6de;
 }
 .new a, .new a:visited {
   color: #222;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 #wrapper {
@@ -40,9 +40,9 @@ a:hover {
 }
 
 #dropbox {
-	background: url('../img/dark.jpg');
-	border-radius: 3px;
-	display: none;
+  background: url('../img/dark.jpg');
+  border-radius: 3px;
+  display: none;
   width: 800px;
   margin-left: 25px;
   height: 100px;
@@ -60,7 +60,7 @@ a:hover {
   background: url('../img/dark.jpg');
   overflow: hidden;
   float: left;
-	border-radius: 3px;
+  border-radius: 3px;
   width: 240px;
   height: 90px;
   margin-top: 25px;

@@ -1,6 +1,6 @@
 {
   "name": "uploader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "File sharing platform built on Nodejs and Amazon S3",
   "keywords": ["file", "uploads", "sharing", "AWS"],
   "author": "Bradley Griffiths <bradley.griffiths@gmail.com>",

@@ -1,30 +1,30 @@
 !!! 5
 html
-head
-  title Uploader
-  meta(name="robots", content="noindex, nofollow")
-  link(rel="stylesheet", href="/assets/css/reset.css", type="text/css")
-  link(rel="stylesheet", href="/assets/css/styles.css", type="text/css")
-body
-  #wrapper
+  head
+    title Uploader
+    meta(name="robots", content="noindex, nofollow")
+    link(rel="stylesheet", href="/assets/css/reset.css", type="text/css")
+    link(rel="stylesheet", href="/assets/css/styles.css", type="text/css")
+  body
+    #wrapper
 
-    #message
-     p Before you can upload files you must first think of a 'secret' key. Visit this site along with the secret key appended to the url to upload files.
-     p You will share this url with people you want to share files with.
-     p#secret Example 'secret' url:
-     a(href='//#{host}/my-secret-key') http://#{host}/my-secret-key
+      #message
+       p Before you can upload files you must first think of a 'secret' key. Visit this site along with the secret key appended to the url to upload files.
+       p You will share this url with people you want to share files with.
+       p#secret Example 'secret' url:
+       a(href='//#{host}/my-secret-key') http://#{host}/my-secret-key
 
-    #dropbox
-      .message Drop files here to upload.
+      #dropbox
+        .message Drop files here to upload.
 
-    ul#files
-      each file in files
-        li(id='id-' + file.id)
-          a(href="#{domain}/" + file.url, target='_blank') 
-            #{file.name}
+      ul#files
+        each file in files
+          li(id='id-' + file.id)
+            a(href="#{domain}/" + file.url, target='_blank') 
+              #{file.name}
 
-  script(src='/assets/js/jquery-1.7.min.js')
-  script(src='/assets/js/jquery.filedrop.js')
-  script(src='/assets/js/scripts.js')
-  script 
-    var s3Url = "#{domain}";
+    script(src='/assets/js/jquery-1.7.min.js')
+    script(src='/assets/js/jquery.filedrop.js')
+    script(src='/assets/js/scripts.js')
+    script 
+      var s3Url = "#{domain}";

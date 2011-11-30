@@ -35,8 +35,8 @@ a:hover {
   margin-bottom: 30px;
 }
 
-#message a {
-  font-size: 15px;
+#message #secret {
+  margin-bottom: 0px;
 }
 
 #dropbox {

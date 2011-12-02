@@ -6,16 +6,16 @@
   "author": "Bradley Griffiths <bradley.griffiths@gmail.com>",
   "dependencies": {
     "express": "2.5.0",
-    "formidable": "1.0.7",
+    "formidable": "1.0.8",
     "knox": "0.0.9",
-    "mongoose": "2.3.13",
-    "jade": "0.17.0"
+    "mongoose": "2.4.0",
+    "jade": "0.18.0"
   },
   "repository": {
     "type": "git",
     "url": "http://github.com/bradleyg/uploader.git"
   },
   "engines": {
-    "node": "0.4.12"
+    "node": ">= 0.4.12"
   }
 }

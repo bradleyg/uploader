@@ -43,14 +43,9 @@ $(function() {
     },
     
     beforeEach: function(file) {
-      console.log(file);
       var preview = $('<li class="new uploading"=>0%</li>');
       $.data(file, preview);
       $('#files').prepend(preview);
-    },
-    
-    uploadStarted: function(i, file, len) {
-      console.log($.data(file));
     },
     
     progressUpdated: function(i, file, progress) {
@@ -64,7 +59,7 @@ $(function() {
     },
     
     uploadFinished: function(i, file, response) {
-      $.data(file).html('<a target="_blank" href="' + s3Url + '/' + response.status.url + '">' + response.status.name + '</a>').removeClass('uploading').attr('id', 'id-' + response.status.id);
+      $.data(file).html('<a target="_blank" href="' + response.status.shortUrl + '">' + response.status.name + '</a>').removeClass('uploading').attr('id', 'id-' + response.status.id);
     }
     
   });

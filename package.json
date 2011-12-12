@@ -1,6 +1,6 @@
 {
   "name": "uploader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "File sharing platform built on Nodejs and Amazon S3",
   "keywords": ["file", "uploads", "sharing", "AWS"],
   "author": "Bradley Griffiths <bradley.griffiths@gmail.com>",
@@ -9,7 +9,8 @@
     "formidable": "1.0.8",
     "knox": "0.0.9",
     "mongoose": "2.4.0",
-    "jade": "0.18.0"
+    "jade": "0.18.0",
+    "goo.gl": "0.0.2"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,6 @@
+
 var express = require("express"),
+    googl = require('goo.gl'),
     knox = require('knox'),
     mongoose = require('mongoose'),
     config = require('./config/config.js'),
@@ -26,6 +28,7 @@ var Schema = mongoose.Schema,
     
 var FileEntry = new Schema({
   url: { type: String }, 
+  shortUrl: { type: String }, 
   name: { type: String }, 
   secret: { type: String }, 
   date: { type: Date, default: Date.now }
@@ -33,6 +36,6 @@ var FileEntry = new Schema({
 
 var fileModel = mongoose.model('FileEntry', FileEntry);
 
-require('./lib/routes')(app, fileModel, client, config);
+require('./lib/routes')(app, fileModel, client, config, googl);
 
 app.listen(process.env.PORT || 3000);

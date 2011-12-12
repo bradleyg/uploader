@@ -40,7 +40,7 @@ a:hover {
 }
 
 #dropbox {
-  background: url('../img/dark.jpg');
+  background: url('../img/messages.png') bottom left repeat-x;
   border-radius: 3px;
   display: none;
   width: 800px;
@@ -57,7 +57,7 @@ a:hover {
 }
 
 #files li {
-  background: url('../img/dark.jpg');
+  background: url('../img/messages.png') bottom left repeat-x;
   overflow: hidden;
   float: left;
   border-radius: 3px;
@@ -80,5 +80,5 @@ a:hover {
 }
 
 #files .new {
-  background: url('../img/blue.png');
+background: url('../img/messages.png') top left repeat-x;
 }

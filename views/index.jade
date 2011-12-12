@@ -20,7 +20,7 @@ html
       ul#files
         each file in files
           li(id='id-' + file.id)
-            a(href="#{domain}/" + file.url, target='_blank') 
+            a(href=file.shortUrl, target='_blank') 
               #{file.name}
 
     script(src='/assets/js/jquery-1.7.min.js')

@@ -31,15 +31,15 @@ $(function() {
     },
     
     dragEnter: function(){
-      $('#dropbox').css({'background': 'url(/assets/img/blue.png)'});
+      $('#dropbox').addClass('dragenter');
     },
     
     dragLeave: function(){
-      $('#dropbox').css({'background': 'url(/assets/img/dark.jpg)'});
+      $('#dropbox').removeClass('dragenter');
     },
     
     drop: function(){
-      $('#dropbox').css({'background': 'url(/assets/img/dark.jpg)'});
+      $('#dropbox').removeClass('dragenter');
     },
     
     beforeEach: function(file) {

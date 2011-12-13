@@ -51,6 +51,10 @@ a:hover {
   text-align: center;
 }
 
+#dropbox.dragenter {
+  background: url('../img/messages.png') top left repeat-x;
+}
+
 #files {
   overflow: auto;
   display: none;
@@ -80,5 +84,5 @@ a:hover {
 }
 
 #files .new {
-background: url('../img/messages.png') top left repeat-x;
+  background: url('../img/messages.png') top left repeat-x;
 }

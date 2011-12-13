@@ -1,6 +1,5 @@
 
 var express = require("express"),
-    googl = require('goo.gl'),
     knox = require('knox'),
     mongoose = require('mongoose'),
     config = require('./config/config.js'),

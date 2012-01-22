@@ -1,12 +1,11 @@
+// requires
+var express = require("express");
+var knox = require('knox');
+var mongoose = require('mongoose');
+var config = require('./config/config.js');
+var app = express.createServer();
 
-var express = require("express"),
-    knox = require('knox'),
-    mongoose = require('mongoose'),
-    config = require('./config/config.js'),
-    app = express.createServer();
-    
-mongoose.connect(config.mongo.db);
-
+// express
 app.configure(function(){
   app.use(express.methodOverride());
   app.use(express.bodyParser());
@@ -16,14 +15,17 @@ app.configure(function(){
   app.set("view options", { layout: false });
 });
 
+// knox
 var client = knox.createClient({
     key: config.s3.key, 
     secret: config.s3.secret, 
     bucket: config.s3.bucket
 });
 
-var Schema = mongoose.Schema, 
-    ObjectId = Schema.ObjectId;
+// mongoose
+mongoose.connect(config.mongo.db);
+var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
     
 var FileEntry = new Schema({
   url: { type: String }, 
@@ -35,6 +37,8 @@ var FileEntry = new Schema({
 
 var fileModel = mongoose.model('FileEntry', FileEntry);
 
-require('./lib/routes')(app, fileModel, client, config, googl);
+// routes
+require('./lib/routes')(app, fileModel, client, config);
 
+// server
 app.listen(process.env.PORT || 3000);

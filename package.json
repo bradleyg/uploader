@@ -1,12 +1,16 @@
 {
   "name": "uploader",
-  "version": "0.0.3",
+  "version": "0.0.3-2",
   "description": "File sharing platform built on Nodejs and Amazon S3",
-  "keywords": ["file", "uploads", "sharing", "AWS"],
+  "keywords": [
+    "file",
+    "uploads",
+    "sharing",
+    "AWS"
+  ],
   "author": "Bradley Griffiths <bradley.griffiths@gmail.com>",
   "dependencies": {
-    "express": "2.5.0",
-    "formidable": "1.0.8",
+    "express": "2.5.4",
     "knox": "0.0.9",
     "mongoose": "2.4.0",
     "jade": "0.18.0",
@@ -16,7 +20,8 @@
     "type": "git",
     "url": "http://github.com/bradleyg/uploader.git"
   },
-  "engines": {
-    "node": ">= 0.4.12"
+  "subdomain": "uploader",
+  "scripts": {
+    "start": "server.js"
   }
 }

@@ -86,3 +86,10 @@ a:hover {
 #files .new {
   background: url('../img/messages.png') top left repeat-x;
 }
+
+#github {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border: 0; 
+}

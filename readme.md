@@ -1,5 +1,3 @@
-[![Build Status](https://secure.travis-ci.org/bradleyg/uploader.png)](http://travis-ci.org/bradleyg/uploader)  
-  
 This uploader application is a HTML5 only file sharing platform. Currently only browsers which support the [File Reader API](http://www.html5rocks.com/en/tutorials/file/dndfiles/) will work (Chrome and Firefox).   
 
 The application uses [jquery-filedrop](https://github.com/weixiyen/jquery-filedrop) for upload progress/drag + drop, [Nodejs](http://nodejs.org) to process and move the uploaded files to [Amazon S3](http://aws.amazon.com/s3/) and [MongoDB](http://www.mongodb.org/) to store it's data.  

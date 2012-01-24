@@ -1,6 +1,6 @@
 {
   "name": "uploader",
-  "version": "0.0.3-2",
+  "version": "0.0.3-3",
   "description": "File sharing platform built on Nodejs and Amazon S3",
   "keywords": [
     "file",
@@ -14,7 +14,8 @@
     "knox": "0.0.9",
     "mongoose": "2.4.0",
     "jade": "0.18.0",
-    "goo.gl": "0.0.2"
+    "goo.gl": "0.0.2",
+    "stylus": "0.22.6"
   },
   "repository": {
     "type": "git",

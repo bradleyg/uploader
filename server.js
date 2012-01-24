@@ -1,5 +1,6 @@
 // requires
 var express = require("express");
+var stylus = require("stylus");
 var knox = require('knox');
 var mongoose = require('mongoose');
 var config = require('./config/config.js');
@@ -7,16 +8,17 @@ var app = express.createServer();
 
 // express
 app.configure(function(){
+  app.use(stylus.middleware({ src: __dirname + '/public' }));
   app.use(express.methodOverride());
   app.use(express.bodyParser());
-  app.use(app.router);
-  app.use('/assets', express.static(__dirname + '/assets'));
+  app.use('/', express.static(__dirname + '/public'));
   app.set("views", __dirname + '/views');
   app.set("view options", { layout: false });
+  app.use(app.router);
 });
 
 // knox
-var client = knox.createClient({
+var s3Client = knox.createClient({
     key: config.s3.key, 
     secret: config.s3.secret, 
     bucket: config.s3.bucket
@@ -38,7 +40,7 @@ var FileEntry = new Schema({
 var fileModel = mongoose.model('FileEntry', FileEntry);
 
 // routes
-require('./lib/routes')(app, fileModel, client, config);
+var routes = require('./lib/routes')(app, fileModel, s3Client);
 
 // server
 app.listen(process.env.PORT || 3000);

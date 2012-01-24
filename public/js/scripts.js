@@ -74,9 +74,11 @@ $(function() {
   
   $('.delete').live("click", function(){
     var id = $(this).parent().attr("id").replace('id-', '');
+    
     $(this).parent().fadeOut(function(){
       $(this).remove();
     });
+    
     $.post("/delete", { id: id });
     return false;
   });

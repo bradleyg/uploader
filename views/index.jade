@@ -5,8 +5,8 @@ html
   head
     title Uploader
     meta(name="robots", content="noindex, nofollow")
-    link(rel="stylesheet", href="/assets/css/reset.css", type="text/css")
-    link(rel="stylesheet", href="/assets/css/styles.css", type="text/css")
+    link(rel="stylesheet", href="/css/reset.css", type="text/css")
+    link(rel="stylesheet", href="/css/styles.css", type="text/css")
     
   body
   
@@ -30,8 +30,8 @@ html
             a(href=file.shortUrl, target='_blank') 
               #{file.name}
 
-    script(src='/assets/js/jquery-1.7.min.js')
-    script(src='/assets/js/jquery.filedrop.js')
-    script(src='/assets/js/scripts.js')
+    script(src='/js/jquery-1.7.min.js')
+    script(src='/js/jquery.filedrop.js')
+    script(src='/js/scripts.js')
     script 
       var s3Url = "#{domain}";

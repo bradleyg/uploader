@@ -1,2 +1,4 @@
 node_modules
+config/privateConfig.js
+public/css/*.css
 .DS_Store

@@ -1,3 +1,7 @@
+$box-shadow = 0 0 4px rgba(0,0,0,0.3) inset,0 -3px 2px rgba(0,0,0,0.1)
+$dark-texture = url('../img/messages.png') bottom left repeat-x
+$blue-texture = url('../img/messages.png') top left repeat-x
+
 body 
   background url('../img/main.jpg')
   color #fff
@@ -33,25 +37,25 @@ ahover
   margin-bottom 0px
 
 #dropbox 
-  background url('../img/messages.png') bottom left repeat-x
+  background $dark-texture
   border-radius 3px
   display none
   width 800px
   margin-left 25px
   height 100px
   line-height 100px
-  box-shadow0 0 4px rgba(0,0,0,0.3) inset,0 -3px 2px rgba(0,0,0,0.1)
   text-align center
+  box-shadow $box-shadow
 
 #dropbox.dragenter 
-  background url('../img/messages.png') top left repeat-x
+  background $blue-texture
 
 #files 
   overflow auto
   display none
 
 #files li 
-  background url('../img/messages.png') bottom left repeat-x
+  background $dark-texture
   overflow hidden
   float left
   border-radius 3px
@@ -62,7 +66,7 @@ ahover
   position relative
   padding 5px
   font-weight bold
-  box-shadow0 0 4px rgba(0,0,0,0.3) inset, 0 -3px 2px rgba(0,0,0,0.1)
+  box-shadow $box-shadow
 
 #files li .delete 
   position absolute
@@ -72,7 +76,7 @@ ahover
   right 5px
 
 #files .new 
-  background url('../img/messages.png') top left repeat-x
+  background $blue-texture
 
 #github 
   position absolute 

@@ -4,7 +4,7 @@ The application uses [jquery-filedrop](https://github.com/weixiyen/jquery-filedr
 
 Currently there is no authorisation model, users can create their own 'secret' url which they can share with friends. If this url is ever discovered by somebody they will have access to all of your uploaded files!
 
-[Click here for a demo, courtesy of Nodejitsu](http://uploader.nodejitsu.com) (Files will be deleted every few hours).
+[Click here for a demo, courtesy of Heroku](http://s3-uploader.herokuapp.com) (Files will be deleted every few hours).
 
 ## Features:
 * Drag + Drop uploads

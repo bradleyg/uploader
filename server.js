@@ -6,6 +6,10 @@ var mongoose = require('mongoose');
 var config = require('./config/config.js');
 var app = express.createServer();
 
+if (process.env.MONGOHQ_URL) {
+  config.mongo.db = process.env.MONGOHQ_URL 
+}
+
 // express
 app.configure(function(){
   app.use(stylus.middleware({ src: __dirname + '/public' }));

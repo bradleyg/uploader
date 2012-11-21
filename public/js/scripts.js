@@ -1,5 +1,5 @@
 $(function() {
-
+  
   var dropbox = $('#dropbox'),
       secret = window.location.pathname;
   
@@ -66,7 +66,7 @@ $(function() {
   
   $('#files li').live("mouseenter", function(){
     if( ! $(this).hasClass("uploading")){
-      $(this).append('<a href="#delete" class="delete">x</a>');  
+      $(this).append('<a href="#delete" class="delete">×</a>');  
     }  
   }).live("mouseleave", function(){
     $('.delete').remove();

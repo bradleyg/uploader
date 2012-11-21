@@ -16,12 +16,12 @@ a, avisited
 .new a, .new avisited 
   color #222
 
-ahover 
-  text-decoration underline
+a:hover
+  color #86caf9
 
 #wrapper 
   margin 50px auto
-  width 850px
+  width 400px
 
 #message 
   display none
@@ -40,46 +40,44 @@ ahover
   background $dark-texture
   border-radius 3px
   display none
-  width 800px
-  margin-left 25px
-  height 100px
-  line-height 100px
+  width 400px
+  height 200px
+  line-height 200px
   text-align center
   box-shadow $box-shadow
+  font-weight bold
+  text-transform uppercase
 
 #dropbox.dragenter 
   background $blue-texture
 
-#files 
-  overflow auto
+#files
   display none
+  width 400px
+  overflow auto
 
 #files li 
   background $dark-texture
-  overflow hidden
   float left
   border-radius 3px
-  width 240px
-  height 90px
-  margin-top 25px
-  margin-left 25px
+  width 380px
+  margin-top 15px
   position relative
-  padding 5px
+  padding 10px
   font-weight bold
   box-shadow $box-shadow
 
-#files li .delete 
+#files li a.delete 
   position absolute
-  line-height 11px
-  color #b75327
-  bottom 5px
+  line-height 20px
+  font-size 20px
+  color #b04435
+  top 50%
   right 5px
+  margin-top -10px
+  
+#files li a.delete:hover
+  color #f65e4a
 
 #files .new 
   background $blue-texture
-
-#github 
-  position absolute 
-  top 0 
-  right 0 
-  border 0

@@ -7,9 +7,9 @@ var mongoose = require('mongoose')
 var config = require('./config/config.js')
 var app = express.createServer()
 
-if (process.env.MONGOHQ_URL) {
-  config.mongo.db = process.env.MONGOHQ_URL
-}
+config.mongo.db = process.env.MONGOHQ_URL || config.mongo.db
+config.s3.key = process.env.S3_KEY || config.s3.key
+config.s3.secret = process.env.S3_SECRET || config.s3.secret
 
 var numCPUs = require('os').cpus().length
 

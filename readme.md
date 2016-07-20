@@ -14,6 +14,7 @@ Currently there is no authorisation model, users can create their own 'secret' u
 * 'Secret' urls  
 
 ## Setup:
+* `git clone https://github.com/bradleyg/uploader.git myproject`  
 * `npm install uploader`  
 * Provide your Amazon/MongoDB database details in config/config.js
 * `node server.js` (started on port: 3000)  
